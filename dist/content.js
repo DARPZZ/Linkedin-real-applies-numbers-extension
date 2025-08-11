@@ -1,0 +1,1 @@
+(()=>{let e="";chrome.runtime.onMessage.addListener(function(t,n,o){"open"===t.action&&(e=t.payload)}),new MutationObserver(()=>{!function(){let t=document.getElementsByClassName("tvm__text tvm__text--low-emphasis");for(const n of t)n.textContent.trim().includes("100")&&(n.textContent=e+" personer klikkede på Ansøg")}()}).observe(document.body,{childList:!0,subtree:!0})})();
